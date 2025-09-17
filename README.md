@@ -69,13 +69,13 @@ cd chessbandito
 
 ### 2. Установите зависимости:
 ```
-npm run dev
+npm install
 # or
-yarn dev
+yarn install
 # or
-pnpm dev
+pnpm install
 # or
-bun dev
+bun install
 ```
 
 ### 3. Запустие проект в dev-режиме:
