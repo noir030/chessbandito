@@ -19,7 +19,7 @@ export default function Home() {
           setIsLoading(false);
           document.body.style.cursor = 'default'
           window.scrollTo(0, 0);
-        }, 2100)
+        }, 1500)
       }
     )()
   }, [])
