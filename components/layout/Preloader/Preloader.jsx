@@ -193,13 +193,13 @@ export default function Preloader() {
             <img src="/images/players/caruana.png" alt="" />
           </div>
           <div className="img">
-            <img src="/images/players/nepo.png" alt="" />
+            <img src="/images/players/magnus.png" alt="" />
           </div>
           <div className="img">
             <img src="/images/players/nakamura.png" alt="" />
           </div>
           <div className="img">
-            <img src="/images/players/magnus.png" alt="" />
+            <img src="/images/players/nepo.png" alt="" />
           </div>
         </div>
       </div>

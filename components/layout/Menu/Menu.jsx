@@ -496,16 +496,12 @@ export default function Menu({ pageRef }) {
               menuColsRef.current[0] = el;
             }}
           >
-            <div className="menu-content-group">
-              <p>&copy; Отсталая Пешка</p>
-              <p>Шахматы без границ</p>
-              <p>YouTube канал</p>
-            </div>
+            <div className="menu-content-group"></div>
+            <div className="menu-content-group"></div>
 
             <div className="menu-content-group">
-              <p>Контакты</p>
-              <p>Telegram: @noir030</p>
-              <p>YouTube: @chessbandito</p>
+              <p>YouTube канал</p>
+              <p>&copy; Отсталая Пешка</p>
             </div>
           </div>
           <div
@@ -515,14 +511,14 @@ export default function Menu({ pageRef }) {
             }}
           >
             <div className="menu-content-group">
-              <p>Мы в соцсетях</p>
+              <p>Мы в медиа</p>
 
               <a href="https://www.youtube.com/@chessbandito" target="_blank">
-                YouTube
+                YouTube <span>→</span> 
               </a>
 
               <a href="https://t.me/pessshka228" target="_blank">
-                Telegram-канал
+                Telegram-канал <span>→</span>
               </a>
             </div>
 
@@ -530,7 +526,6 @@ export default function Menu({ pageRef }) {
               <p>Credits</p>
               <p>Made by Mirka</p>
               <p>Assets by Codegrid</p>
-              <p>(open-source)</p>
             </div>
           </div>
         </div>
