@@ -3,12 +3,12 @@
 import "./Footer.css";
 
 import { useEffect, useState, useRef } from "react";
-import { opacity } from './animation';
-import { useInView, motion } from 'framer-motion';
+import { useInView, motion } from "framer-motion";
+import { revealUp } from "./animation";
 
 export default function Footer() {
   const footerRef = useRef(null);
-  const isInView = useInView(footerRef)
+  const isInView = useInView(footerRef, { once: true });
   const [locationTime, setLocationTime] = useState("");
 
   useEffect(() => {
@@ -37,7 +37,15 @@ export default function Footer() {
       <div className="container">
         <div className="footer-header-content">
           <div className="footer-header">
-            <motion.h1 variants={opacity} animate={isInView ? "open" : "closed"}>Шахматы без границ</motion.h1>
+            <div className="reveal">
+              <motion.h1
+                variants={revealUp}
+                initial="initial"
+                animate={isInView ? "open" : "initial"}
+              >
+                Шахматы без границ
+              </motion.h1>
+            </div>
           </div>
         </div>
 

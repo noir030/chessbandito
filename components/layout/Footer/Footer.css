@@ -1,3 +1,7 @@
+.reveal {
+  overflow: hidden;
+}
+
 footer {
   position: relative;
   width: 100vw;
