@@ -511,8 +511,6 @@ export default function Menu({ pageRef }) {
             }}
           >
             <div className="menu-content-group">
-              <p>Мы в медиа</p>
-
               <a href="https://www.youtube.com/@chessbandito" target="_blank">
                 YouTube <span>→</span> 
               </a>

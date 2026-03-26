@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Preloader from "@/components/layout/Preloader/Preloader";
 import Showreel from "@/components/sections/home/showreel/Showreel";
+import Videos from "@/components/sections/home/videos/Videos";
 import Hero from "@/components/sections/home/Hero";
 import About from "@/components/sections/home/About";
 import Support from "@/components/sections/home/Support";
@@ -32,6 +33,7 @@ export default function Home() {
       <Preloader />
 
       <Showreel />
+      <Videos />
       <Hero />
       <About />
       <Support />

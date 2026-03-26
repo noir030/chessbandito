@@ -205,7 +205,10 @@ export default function Preloader() {
       </div>
 
       <div className="preloader-header">
-        <h1>Отсталая пешка</h1>
+        <h1>
+          Отсталая <br className="mobile-break" />
+          пешка
+        </h1>
       </div>
     </>
   );
