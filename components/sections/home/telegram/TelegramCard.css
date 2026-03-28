@@ -1,0 +1,66 @@
+.telegram {
+  background-color: var(--base-100);
+}
+
+.telegram .container {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding-bottom: 10rem;
+}
+
+.telegram .telegram-card {
+  margin: 0 auto;
+  width: 70%;
+  background-color: var(--base-400);
+  color: var(--base-100);
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.telegram .telegram-card .telegram-card-copy {
+  display: flex;
+  gap: 3rem;
+}
+
+.telegram .telegram-card .telegram-card-copy .telegram-card-col {
+  flex: 1;
+}
+
+.telegram .telegram-card .telegram-card-copy .telegram-card-col h3 {
+  color: #229ed9;
+}
+
+.telegram .telegram-card .telegram-card-copy .telegram-card-col p {
+  font-family: var(--font-pangram);
+  font-weight: 400;
+}
+
+.telegram .telegram-card .telegram-card-copy .telegram-card-col:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.telegram .telegram-card .telegram-card-copy .telegram-card-col .reveal {
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  .telegram .telegram-card {
+    width: 100%;
+  }
+
+  .telegram .telegram-card .telegram-card-copy {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .telegram .container {
+    gap: 2rem;
+  }
+
+  .telegram .telegram-card .telegram-card-copy .telegram-card-col h3 {
+    font-size: 2rem;
+  }
+}

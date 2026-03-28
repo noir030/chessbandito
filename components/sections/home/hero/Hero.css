@@ -39,6 +39,10 @@
 }
 
 @media (max-width: 1000px) {
+  .hero .container {
+    padding-top: 30%;
+  }
+
   .hero .container .hero-content-main,
   .hero .container .hero-content-main .hero-footer {
     width: 100%;

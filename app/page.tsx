@@ -8,6 +8,7 @@ import Preloader from "@/components/layout/Preloader/Preloader";
 import Hero from "@/components/sections/home/hero/Hero";
 import Showreel from "@/components/sections/home/showreel/Showreel";
 import Videos from "@/components/sections/home/videos/Videos";
+import TelegramCard from "@/components/sections/home/telegram/TelegramCard";
 import Footer from "@/components/layout/Footer/Footer";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -34,6 +35,7 @@ export default function Home() {
       <Hero />
       <Showreel />
       <Videos />
+      <TelegramCard />
       <Footer />
     </main>
   );

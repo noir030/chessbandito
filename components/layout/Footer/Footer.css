@@ -1,7 +1,3 @@
-.reveal {
-  overflow: hidden;
-}
-
 footer {
   position: relative;
   width: 100vw;
@@ -112,5 +108,9 @@ footer .footer-byline p {
 
   footer .footer-byline {
     padding: 1.25rem;
+  }
+
+  footer .footer-time span {
+    display: block;
   }
 }

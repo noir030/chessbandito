@@ -1,7 +1,7 @@
 "use client";
 
 import "./Hero.css";
-import Button from "@/components/ui/Button/Button";
+import LinkButton from "@/components/ui/Button/LinkButton";
 import { FaYoutube } from "react-icons/fa";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
@@ -69,13 +69,13 @@ export default function Hero() {
               </p>
             </div>
 
-            <Button
+            <LinkButton
               delay={isInitialLoad ? 7 : 2}
               icon={FaYoutube}
-              href="/contact"
+              href="https://www.youtube.com/@chessbandito"
             >
               Перейти на YouTube
-            </Button>
+            </LinkButton>
           </div>
         </div>
       </div>

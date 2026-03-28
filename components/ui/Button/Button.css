@@ -98,7 +98,7 @@
 }
 
 .button--light .button-label::after {
-  background: var(--base-100);
+  background: var(--base-500);
 }
 
 .button--light .button-icon-inner {
