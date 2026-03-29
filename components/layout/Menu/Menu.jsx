@@ -36,10 +36,9 @@ export default function Menu({ pageRef }) {
 
   const menuItems = [
     { label: "Главная", route: "/" },
-    { label: "Авторы", route: "/author" },
+    { label: "Авторы", route: "/authors" },
     { label: "Интересное", route: "/stories" },
     { label: "Магазин", route: "/store" },
-    { label: "Контакты", route: "/contact" },
   ];
 
   const currentX = useRef(0);
