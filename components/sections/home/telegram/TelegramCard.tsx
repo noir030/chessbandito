@@ -2,7 +2,6 @@
 
 import "./TelegramCard.css";
 import LinkButton from "@/components/ui/Button/LinkButton";
-import Button from "@/components/ui/Button/Button";
 
 import gsap from "gsap";
 import { FaTelegram } from "react-icons/fa";
@@ -15,17 +14,14 @@ export default function TelegramCard() {
   const sectionRef = useRef<HTMLElement | null>(null);
   const titleRef = useRef<HTMLHeadingElement | null>(null);
   const textRefs = useRef<(HTMLParagraphElement | null)[]>([]);
-  const newsRefs = useRef<(HTMLParagraphElement | null)[]>([]);
 
   useEffect(() => {
     if (!sectionRef.current) return;
 
     const ctx = gsap.context(() => {
-      const items = [
-        ...newsRefs.current,
-        titleRef.current,
-        ...textRefs.current,
-      ].filter(Boolean) as HTMLElement[];
+      const items = [titleRef.current, ...textRefs.current].filter(
+        Boolean
+      ) as HTMLElement[];
 
       if (!items.length) return;
 
@@ -56,37 +52,6 @@ export default function TelegramCard() {
   return (
     <section className="telegram" ref={sectionRef}>
       <div className="container">
-        <div className="telegram-copy">
-          <div className="telegram-col">
-            <div className="reveal">
-              <p className="sm">Для справки</p>
-            </div>
-          </div>
-
-          <div className="telegram-col">
-            <div className="reveal">
-              <p
-                className="lg"
-                ref={(el) => {
-                  newsRefs.current[0] = el;
-                }}
-              >
-                У нас на сайте есть последние новости из мира шахмат в формате
-                сторис, просто для информации
-              </p>
-            </div>
-
-            <Button
-              animateOnScroll={true}
-              delay={0.25}
-              variant="dark"
-              href="/news"
-            >
-              Чекнуть новости
-            </Button>
-          </div>
-        </div>
-
         <div className="telegram-card">
           <div className="telegram-card-copy">
             <div className="telegram-card-col">

@@ -1,0 +1,43 @@
+.storiesInfo {
+  background-color: var(--base-100);
+}
+
+.storiesInfo .container {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  padding-bottom: 10rem;
+}
+
+.storiesInfo .storiesInfo-copy {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.storiesInfo .storiesInfo-copy .storiesInfo-col {
+  flex: 1;
+}
+
+.storiesInfo .storiesInfo-copy .storiesInfo-col:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.storiesInfo .reveal {
+  overflow: hidden;
+}
+
+@media (max-width: 1000px) {
+  .storiesInfo .storiesInfo-copy {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .storiesInfo .container {
+    gap: 2rem;
+  }
+}

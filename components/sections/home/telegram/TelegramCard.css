@@ -9,24 +9,6 @@
   padding-bottom: 10rem;
 }
 
-.telegram .telegram-copy {
-  width: 70%;
-  margin: 0 auto;
-  display: flex;
-  gap: 2rem;
-  padding: 2rem 0;
-}
-
-.telegram .telegram-copy .telegram-col {
-  flex: 1;
-}
-
-.telegram .telegram-copy .telegram-col:nth-child(2) {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
 .telegram .telegram-card {
   margin: 0 auto;
   width: 70%;
@@ -65,11 +47,6 @@
 }
 
 @media (max-width: 1000px) {
-  .telegram .telegram-copy {
-    width: 100%;
-    flex-direction: column;
-  }
-
   .telegram .telegram-card {
     width: 100%;
   }

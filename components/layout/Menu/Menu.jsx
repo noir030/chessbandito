@@ -8,7 +8,6 @@ import { SplitText } from "gsap/all";
 import { useGSAP } from "@gsap/react";
 import { useLenis } from "lenis/react";
 import { useViewTransition } from "@/hooks/useViewTransition";
-import { FaYoutube, FaTelegramPlane } from "react-icons/fa";
 
 gsap.registerPlugin(useGSAP, SplitText);
 
@@ -38,6 +37,7 @@ export default function Menu({ pageRef }) {
   const menuItems = [
     { label: "Главная", route: "/" },
     { label: "Авторы", route: "/author" },
+    { label: "Интересное", route: "/stories" },
     { label: "Магазин", route: "/store" },
     { label: "Контакты", route: "/contact" },
   ];
