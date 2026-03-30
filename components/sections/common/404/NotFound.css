@@ -22,6 +22,10 @@
     line-height: 1.1;
 }
 
+.not-found-content p {
+    font-size: 1.3rem;
+}
+
 .not-found-gif-wrap {
   width: min(420px, 80vw);
 }

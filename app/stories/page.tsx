@@ -1,6 +1,6 @@
 "use client";
 
-import StorySlides from "@/components/sections/news/StorySlides";
+import StorySlides from "@/components/sections/stories/StorySlides";
 
 export default function Stories() {
   return <StorySlides />;
