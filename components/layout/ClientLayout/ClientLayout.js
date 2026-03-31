@@ -2,8 +2,26 @@
 
 import Menu from "@/components/layout/Menu/Menu";
 
-import { useRef, useMemo } from "react";
-import { ReactLenis } from "lenis/react";
+import { useRef, useMemo, useEffect } from "react";
+import { ReactLenis, useLenis } from "lenis/react";
+import { usePathname } from "next/navigation";                              
+
+function ScrollReset() {
+  const pathname = usePathname();
+  const lenis = useLenis();
+
+  useEffect(() => {
+    if (lenis) {
+      lenis.scrollTo(0, {
+        immediate: true, 
+        force: true, 
+        lock: false,
+      });
+    }
+  }, [pathname, lenis]);
+
+  return null;
+}
 
 export default function ClientLayout({ children }) {
   const pageRef = useRef(null);
@@ -30,6 +48,7 @@ export default function ClientLayout({ children }) {
   return (
     <ReactLenis root options={scrollSettings}>
       <Menu pageRef={pageRef} />
+      <ScrollReset />
 
       <div className="page" ref={pageRef}>
         {children}

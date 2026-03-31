@@ -12,7 +12,6 @@ import { useViewTransition } from "@/hooks/useViewTransition";
 gsap.registerPlugin(useGSAP, SplitText);
 
 export default function Menu({ pageRef }) {
-
   const navToggleRef = useRef(null);
   const menuOverlayRef = useRef(null);
   const menuImageRef = useRef(null);
@@ -510,7 +509,7 @@ export default function Menu({ pageRef }) {
           >
             <div className="menu-content-group">
               <a href="https://www.youtube.com/@chessbandito" target="_blank">
-                YouTube <span>→</span> 
+                YouTube <span>→</span>
               </a>
 
               <a href="https://t.me/pessshka228" target="_blank">
@@ -547,10 +546,15 @@ export default function Menu({ pageRef }) {
                   }
                   return;
                 }
-                navigateWithTransition(
-                  item.route,
-                  isMenuOpen ? toggleMenu : null,
-                );
+
+                if (isMenuOpen) {
+                  toggleMenu();
+                  setTimeout(() => {
+                    navigateWithTransition(item.route, null);
+                  }, 1300);
+                } else {
+                  navigateWithTransition(item.route, null);
+                }
               }}
             >
               <a
@@ -570,4 +574,4 @@ export default function Menu({ pageRef }) {
       </div>
     </>
   );
-};
+}

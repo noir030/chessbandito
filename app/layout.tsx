@@ -8,7 +8,7 @@ import { ViewTransitions } from "next-view-transitions";
 export const metadata: Metadata = {
   metadataBase: new URL("https://chessbandito.com"),
   
-  title: "Отсталая пешка — лучший шахматный канал на YouTube",
+  title: "Отсталая пешка",
   description: "Отсталая пешка — лучший шахматный канал на YouTube, шахматы без границ и лишнего пафоса",
 
   icons: {
