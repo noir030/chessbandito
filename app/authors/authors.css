@@ -38,7 +38,7 @@
 }
 
 .authors-images .container {
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
 }
 
 .authors-images-row {
@@ -63,26 +63,24 @@
 .authors-copy .container {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  width: 80%;
   gap: 4rem;
   padding-bottom: 5rem;
 }
 
-.authors-copy p {
-  width: 70%;
-  margin: 0 auto;
-  text-align: left;
-  font-family: var(--font-pangram);
-  font-weight: 500;
-  font-size: 1.75rem;
+.authors-copy h3 {
+  font-size: 4rem;
 }
 
 @media (max-width: 1000px) {
   .authors-header-row h1 {
-    font-size: 18vw;
+    font-size: 12vw;
   }
 
   .authors-images-row {
     flex-direction: column;
+    gap: 4rem;
   }
 
   .author-img {

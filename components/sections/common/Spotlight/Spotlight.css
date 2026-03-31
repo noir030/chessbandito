@@ -4,6 +4,7 @@
   height: 100%;
   background-color: var(--base-100);
   overflow: hidden;
+  margin-top: 5rem;
 }
 
 .spotlight .marquees {
@@ -89,6 +90,6 @@
   }
 
   .spotlight .marquee-img-item h1 {
-    font-size: 2.5rem;
+    font-size: 1.75rem;
   }
 }

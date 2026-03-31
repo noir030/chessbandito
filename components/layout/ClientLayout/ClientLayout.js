@@ -16,7 +16,7 @@ export default function ClientLayout({ children }) {
       gestureDirection: "vertical",
       smooth: true,
       smoothTouch: true,
-      touchMultiplier: 1.1,
+      touchMultiplier: 1.4,
       infinite: false,
       lerp: 0.1,
       wheelMultiplier: 1,

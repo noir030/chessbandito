@@ -2,7 +2,9 @@
 
 import "./authors.css";
 
+import Character from '@/components/ui/ScrollText/Character';
 import Spotlight from "@/components/sections/common/Spotlight/Spotlight";
+import StoriesInfo from "@/components/sections/home/storiesinfo/StoriesInfo";
 import TelegramCard from "@/components/sections/common/TelegramCard/TelegramCard";
 import Footer from "@/components/layout/Footer/Footer";
 
@@ -11,6 +13,8 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
+
+const paragraph = "Мы два брата из небольшого города на севере Казахстана. В шахматы играем уже больше 10 лет, но, к сожалению или к счастью, ничего глобального так и не достигли. Как говорил Зигберт Тарраш: шахматы, как любовь и музыка, обладают способностью делать человека счастливым. История нашего канала началась с мема «Тиньков поясняет шахматные дебюты», который мы залили от нечего делать.Он неожиданно выстрелил, и с этого момента мы начали активно вести и развивать наш YouTube - проект.Сейчас работаем над ним вместе, пробуем новое, улучшаем контент и просто стараемся быть на одной волне с теми, кому это тоже заходит."
 
 export default function Authors() {
   const titleRef = useRef<HTMLHeadingElement | null>(null);
@@ -94,40 +98,10 @@ export default function Authors() {
         </div>
       </section>
 
-      <section className="authors-copy" ref={copySectionRef}>
-        <div className="container">
-          <div className="reveal">
-            <p
-              ref={(el) => {
-                textRefs.current[0] = el;
-              }}
-            >
-              Мы два брата из небольшого города на севере Казахстана. В шахматы
-              играем уже больше 10 лет, но, к сожалению или к счастью, ничего
-              глобального так и не достигли. Как говорил Зигберт Тарраш:
-              шахматы, как любовь и музыка, обладают способностью делать
-              человека счастливым.
-            </p>
-          </div>
+      <Character paragraph={paragraph} />
 
-          <div className="reveal">
-            <p
-              ref={(el) => {
-                textRefs.current[1] = el;
-              }}
-            >
-              История нашего канала началась с мема «Тиньков поясняет шахматные
-              дебюты», который мы залили от нечего делать. Он неожиданно
-              выстрелил, и с этого момента мы начали активно вести и развивать
-              наш YouTube-проект. Сейчас работаем над ним вместе, пробуем
-              новое, улучшаем контент и просто стараемся быть на одной волне с
-              теми, кому это тоже заходит.
-            </p>
-          </div>
-        </div>
-      </section>
-      
       <Spotlight />
+      <StoriesInfo />
       <TelegramCard />
       <Footer />
     </div>
