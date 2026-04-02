@@ -37,6 +37,7 @@ export default function Menu({ pageRef }) {
     { label: "Главная", route: "/" },
     { label: "Авторы", route: "/authors" },
     { label: "Интересное", route: "/stories" },
+    { label: "Поддержать", route: "/donate" },
   ];
 
   const currentX = useRef(0);
