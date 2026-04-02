@@ -46,7 +46,7 @@
   overflow: hidden;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .telegram .telegram-card {
     width: 100%;
   }
@@ -58,6 +58,7 @@
 
   .telegram .container {
     gap: 2rem;
+    padding-bottom: 6rem;
   }
 
   .telegram .telegram-card .telegram-card-copy .telegram-card-col h3 {

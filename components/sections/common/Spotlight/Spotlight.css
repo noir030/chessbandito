@@ -4,7 +4,7 @@
   height: 100%;
   background-color: var(--base-100);
   overflow: hidden;
-  margin-top: 5rem;
+  padding-top: 5rem;
 }
 
 .spotlight .marquees {
@@ -75,6 +75,10 @@
 }
 
 @media (max-width: 1000px) {
+  .spotlight {
+    padding: 2.5rem 0;
+  }
+  
   .spotlight .marquees {
     height: 100svh;
   }

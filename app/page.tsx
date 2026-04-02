@@ -9,6 +9,7 @@ import Hero from "@/components/sections/home/hero/Hero";
 import Showreel from "@/components/sections/home/showreel/Showreel";
 import Description from '@/components/sections/home/description/Description';
 import Videos from "@/components/sections/home/videos/Videos";
+import Spotlight from "@/components/sections/common/Spotlight/Spotlight";
 import StoriesInfo from "@/components/sections/home/storiesinfo/StoriesInfo";
 import TelegramCard from "@/components/sections/common/TelegramCard/TelegramCard";
 import Footer from "@/components/layout/Footer/Footer";
@@ -38,6 +39,7 @@ export default function Home() {
       <Showreel />
       <Description />
       <Videos />
+      <Spotlight />
       <StoriesInfo />
       <TelegramCard />
       <Footer />

@@ -1,7 +1,4 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+module.exports = {
+  // другие настройки...
+  allowedDevOrigins: ['10.94.110.42'], // ваш IP
+}

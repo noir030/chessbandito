@@ -38,7 +38,7 @@ html {
 }
 
 body {
-  background-color: #000;
+  background-color: var(--base-100);
   color: var(--base-400);
   overflow-x: hidden;
 }
